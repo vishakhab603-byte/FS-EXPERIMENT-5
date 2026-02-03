@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dynamic Product Filter</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <main class="app">
+    <h1>Dynamic Product Filter</h1>
+
+    <!-- Filter Control -->
+    <label for="categorySelect" class="label">
+      Filter by Category:
+    </label>
+
+    <select id="categorySelect" aria-label="Product category filter">
+      <option value="All">All</option>
+      <option value="Electronics">Electronics</option>
+      <option value="Clothing">Clothing</option>
+    </select>
+
+    <!-- Product Grid -->
+    <section
+      id="productContainer"
+      class="grid"
+      aria-live="polite"
+    ></section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
